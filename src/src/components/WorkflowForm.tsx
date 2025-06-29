@@ -66,11 +66,7 @@ export default function WorkflowForm({ onSubmit, isLoading }: WorkflowFormProps)
       </form>
 
       <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-<<<<<<< HEAD
-        <h4 className="font-semibold text-blue-900 mb-2">What you get:</h4>
-=======
-        <h4 className="font-semibold text-blue-900 mb-2">What youyouyou'llapos;llapos;ll get:</h4>
->>>>>>> a96e448 (Sync latest frontend fixes from local dev)
+        <h4 className="font-semibold text-blue-900 mb-2">What you&apos;ll get:</h4>
         <ul className="text-sm text-blue-800 space-y-1">
           <li>• AI-generated keyword research with intent classification</li>
           <li>• SERP analysis with content gap identification</li>
@@ -80,4 +76,4 @@ export default function WorkflowForm({ onSubmit, isLoading }: WorkflowFormProps)
       </div>
     </div>
   );
-}
+} 

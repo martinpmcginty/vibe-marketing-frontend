@@ -1,32 +1,29 @@
 {
-  "name": "vibe-marketing-frontend",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vibe-marketing-workflow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:keyword-tool": "ts-node servers/keyword-tool/server.ts",
+    "start:serp-analyser": "ts-node servers/serp-analyser/server.ts",
+    "workflow": "ts-node workflows/run-workflow.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^4.17.23",
+    "@types/node": "^24.0.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@radix-ui/react-progress": "^1.1.7",
-    "@radix-ui/react-tabs": "^1.1.12",
     "axios": "^1.10.0",
-    "framer-motion": "^12.19.2",
-    "lucide-react": "^0.525.0",
-    "next": "15.3.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.4",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "dotenv": "^17.0.0",
+    "express": "^4.21.2"
   }
 }
