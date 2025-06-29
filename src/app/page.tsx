@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { useState } from 'react';
 import { Search, BarChart3, FileText, Sparkles } from 'lucide-react';
 import WorkflowForm from '@/components/WorkflowForm';
@@ -14,12 +15,8 @@ export default function Home() {
   const handleWorkflowSubmit = async (seedPhrase: string) => {
     setIsLoading(true);
     setError(null);
-
     try {
-      // For now, we'll use a mock response until backend is deployed
-      // const response = await apiService.runWorkflow(seedPhrase);
-
-      // Mock response for development
+      // TODO: Replace with real API call
       const mockResponse: WorkflowResult = {
         seedPhrase,
         keywords: {
@@ -84,7 +81,6 @@ export default function Home() {
           'Create comprehensive, actionable guides',
         ],
       };
-
       setResults(mockResponse);
     } catch (err) {
       setError('Failed to run workflow. Please try again.');
@@ -197,4 +193,4 @@ export default function Home() {
       </main>
     </div>
   );
-}
+} 
