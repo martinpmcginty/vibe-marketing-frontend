@@ -1,32 +1,18 @@
 {
-  "name": "vibe-marketing-workflow",
+  "name": "vibe-marketing-frontend",
   "version": "1.0.0",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:keyword-tool": "ts-node servers/keyword-tool/server.ts",
-    "start:serp-analyser": "ts-node servers/serp-analyser/server.ts",
-    "workflow": "ts-node workflows/run-workflow.ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@types/express": "^4.17.23",
-    "@types/node": "^24.0.7",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "axios": "^1.10.0",
-    "dotenv": "^17.0.0",
-    "express": "^4.21.2",
     "next": "^15.3.4",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "axios": "^1.10.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
   }
 }
