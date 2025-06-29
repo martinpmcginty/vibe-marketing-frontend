@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Search, Zap, Target, BarChart3, FileText, Sparkles } from 'lucide-react';
+import { Search, BarChart3, FileText, Sparkles } from 'lucide-react';
 import WorkflowForm from '@/components/WorkflowForm';
 import ResultsDisplay from '@/components/ResultsDisplay';
 import { WorkflowResult } from '@/lib/api';
